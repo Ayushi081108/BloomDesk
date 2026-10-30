@@ -1,0 +1,406 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf8;
+    color: #382b31;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background: #b65c78;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #93445e;
+    transform: translateY(-2px);
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 6%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 12px #0000000a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #b65c78;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #51444a;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b65c78;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.page {
+    display: none;
+    min-height: 65vh;
+    padding: 45px 7%;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero {
+    min-height: 430px;
+    background: linear-gradient(120deg, #f9e3e8, #fcefe5);
+    border-radius: 22px;
+    padding: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.eyebrow {
+    color: #b65c78;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: #76646c;
+    margin-bottom: 22px;
+}
+
+.hero-flower {
+    font-size: clamp(100px, 18vw, 200px);
+}
+
+.section-heading {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.section-heading h1,
+.section-heading h2 {
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #89777e;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 18px #00000009;
+    font-size: 32px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.feature-card p {
+    font-size: 13px;
+    color: #89777e;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 25px auto 40px;
+    gap: 10px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #e6d9dd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #b65c78;
+}
+
+.flower-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+}
+
+.flower-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 18px #0000000a;
+}
+
+.flower-image {
+    background: #fcecf0;
+    border-radius: 12px;
+    padding: 22px;
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.flower-card h3 {
+    margin: 10px 0;
+}
+
+.flower-card p {
+    color: #b65c78;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.login-card {
+    background: white;
+    max-width: 440px;
+    margin: 20px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px #00000010;
+}
+
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.login-card > p {
+    text-align: center;
+    color: #89777e;
+    margin-bottom: 25px;
+}
+
+.login-card label {
+    display: block;
+    margin: 15px 0 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.full-btn, .secondary-btn {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.secondary-btn {
+    background: #f4e4e9;
+    color: #9c4e68;
+}
+
+.secondary-btn:hover {
+    background: #ebd2dc;
+}
+
+.signup-area {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.signup-area p {
+    font-size: 13px;
+    color: #89777e;
+}
+
+.message {
+    color: #bd3655;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card, .admin-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+.stat-card h3 {
+    color: #89777e;
+    font-size: 14px;
+}
+
+.stat-card h2 {
+    color: #b65c78;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.admin-panel {
+    margin: 20px 0;
+}
+
+.admin-panel h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.admin-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 10px;
+}
+
+.admin-item, .order-item, .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0e5e8;
+    flex-wrap: wrap;
+}
+
+.admin-item button, .order-item button {
+    padding: 8px 13px;
+    font-size: 12px;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    color: #89777e;
+}
+
+footer {
+    background: #382b31;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    color: #f2b8c8;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #d7c4cb;
+    margin-top: 8px;
+}
+
+@media(max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 35px;
+    }
+
+    .features, .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 500px) {
+    .page {
+        padding: 25px 5%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-flower {
+        font-size: 100px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .login-card {
+        padding: 25px 18px;
+    }
+}
